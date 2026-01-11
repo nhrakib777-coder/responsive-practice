@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive layout</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        background-color: blueviolet;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+    }
+
+    body{
+        background-color: aquamarine;
+    }
+    .container{
+        display: flex;
+        /* background-color: aqua; */
+    }
+
+    .left{
+        background-color: burlywood;
+        height: 80vh;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right{
+        background-color: greenyellow;
+        height: 80vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    p{
+        color: white;
+        font-size: 2em;
+    }
+    footer{
+        background-color: aqua;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    @media screen and (max-width: 576px){
+        
+    }
+
+</style>
+
+<body>
+    <nav><p>Nav</p></nav>
+    <div class="container">
+        <div class="left">
+            <p>Left</p>
+        </div>
+        <div class="right">
+            <p>right</p>
+        </div>
+    </div>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
